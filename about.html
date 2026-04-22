@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo.png" />
+  <title>About Me</title>
+</head>
+
+<body>
+
+
+
+
+
+
+  <nav class="nav">
+    <span class="logo"><a href="index.html">sc.</a></span>
+    <span class="navItems">
+      <a href="index.html" class="home hover">Home</a>
+      <a href="about.html" class="about selected">About</a>
+      <a href="resume.html" class="resumee hover">Resume</a>
+      <a href="projects.html" class="contact hover">Projects</a>
+      <a href="contact.html" class="contact hover">Contact</a>
+    </span>
+    <span id="ham" class="hamSpan"><img src="img/hamm.png" alt="" class="ham" onclick="toggleHamMenu()"></span>
+  </nav>
+
+  <div class="hMenu" id="hMenu">
+    <a href="index.html" class="home hover">Home</a>
+    <a href="about.html" class="selected">About</a>
+    <a href="resume.html" class="hover">Resume</a>
+    <a href="projects.html" class="hover">Projects</a>
+    <a href="contact.html" class="hover">Contact</a>
+  </div>
+
+
+  <div class="dotDiv">
+    <div class="dots"></div>
+  </div>
+
+
+
+
+  <div class="aboutDiv">
+    <div class="aboutMe">
+      <h1 class="abtMe">ABOUT</h1>
+      <h1 class="me">ME</h1>
+      <p class="abtMePara">Hello there! I'm Shubhankar Chavan, a Computer Science student immersed in cybersecurity.
+        Fascinated
+        by computers' potential, I specialize in web development, networks, and programming, exploring from encryption
+        to
+        ethical hacking. Proficient in offensive security, I excel in penetration testing, vulnerability scanning, and
+        exploit utilization. I leverage these techniques to fortify networks, applications, and servers against cyber
+        threats. Let's strengthen defenses through strategic cybersecurity measures.</p>
+
+      <div class="social">
+        <a href="mailto:shubhankarchavan01@gmail.com" target="_blank"><span class="socialIcon gm"><img
+              src="img/gmail.png" alt=""></span></a>
+
+        <a href="https://wa.me/+919657526862" target="_blank"><span class="socialIcon wa"><img src="img/whatsapp.png"
+              alt=""></span></a>
+
+        <a href="https://www.linkedin.com/in/shubhankarchavan/" target="_blank"><span
+            class="socialIcon li"><img src="img/linkedin.png" alt=""></span></a>
+
+        <a href="https://github.com/shubhankargithub" target="_blank"><span class="socialIcon gh"><img src="img/github.png"
+              alt=""></span></a>
+
+        <a href="tel:+919657526862" target="_blank"><span class="socialIcon ph"><img src="img/callmale.png"
+              alt=""></span></a>
+
+      </div>
+    </div>
+
+
+
+    <div class="photo"></div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <footer>
+    <span>Copyright 2022 © Shubhankar Chavan. All rights Reserved.</span>
+    <img src="img/arrow.png" alt="" class="arrow">
+  </footer>
+
+
+
+  <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let hm = 0;
+    const hamMenu = document.getElementById("hMenu");
+    const ham = document.getElementById("ham");
+    function toggleHamMenu() {
+      if (hm == 0) {
+        hamMenu.classList.add("showHameMenu");
+        hamMenu.classList.remove("hideHameMenu");
+        ham.innerHTML = `<img src="img/hammcut.png" alt="" class="ham" onclick="toggleHamMenu()">`;
+        hm = 1;
+      }
+      else if (hm == 1) {
+        hamMenu.classList.add("hideHameMenu");
+        hamMenu.classList.remove("showHameMenu");
+        ham.innerHTML = `<img src="img/hamm.png" alt="" class="ham" onclick="toggleHamMenu()">`;
+        hm = 0;
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>

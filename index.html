@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo.png" />
+  <title>dc</title>
+</head>
+
+<body>
+
+  <div class="pre" id="pre">
+
+    <div class="p1" id="p1"></div>
+    <div class="p2" id="p2"></div>
+    <div class="p3" id="p3"></div>
+    <div class="p4" id="p4"></div>
+    <div class="p5" id="p5"></div>
+
+  </div>
+
+
+
+
+  <nav class="nav">
+    <span class="logo"><a href="index.html">sc.</a></span>
+    <span class="navItems">
+      <a href="index.html" class="home selected">Home</a>
+      <a href="about.html" class="about hover">About</a>
+      <a href="resume.html" class="resumee hover">Resume</a>
+      <a href="projects.html" class="contact hover">Projects</a>
+      <a href="contact.html" class="contact hover">Contact</a>
+    </span>
+    <span id="ham" class="hamSpan"><img src="img/hamm.png" alt="" class="ham" onclick="toggleHamMenu()"></span>
+  </nav>
+
+  <div class="hMenu" id="hMenu">
+    <a href="index.html" class="home selected">Home</a>
+    <a href="about.html" class="hover">About</a>
+    <a href="resume.html" class="hover">Resume</a>
+    <a href="projects.html" class="hover">Projects</a>
+    <a href="contact.html" class="hover">Contact</a>
+  </div>
+
+
+  <div class="dotDiv">
+    <div class="dots"></div>
+  </div>
+
+  <div class="nameDiv">
+    <h1 class="name textShadow">Shubhankar</h1>
+    <h1 class="name">Chavan.</h1>
+    <p class="abtMe">Hello there! I'm Shubhankar Chavan, a Computer Science student immersed in cybersecurity. Fascinated
+      by computers' potential, I specialize in web development, networks, and programming, exploring from encryption to
+      ethical hacking. Proficient in offensive security, I excel in penetration testing, vulnerability scanning, and
+      exploit utilization. I leverage these techniques to fortify networks, applications, and servers against cyber
+      threats. Let's strengthen defenses through strategic cybersecurity measures.</p>
+    <div class="links">
+      <a href="projects.html" class="btn">PROJECTS ></a>
+      <a href="resume.html" class="btn resume">RESUME ></a>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <span>Copyright 2025 © Shubhankar Chavan. All rights Reserved.</span>
+    <img src="img/arrow.png" alt="" class="arrow">
+  </footer>
+
+  <script>
+
+
+
+    (function () {
+      const p1 = document.getElementById("p1");
+      const p2 = document.getElementById("p2");
+      const p3 = document.getElementById("p3");
+      const p4 = document.getElementById("p4");
+      const p5 = document.getElementById("p5");
+
+
+      setTimeout(() => {
+        console.log("hello")
+        p1.innerHTML = `<br>#!/bin/bash <br>
+        <br>
+        wall <br>
+        E-mail your noontime orders for pizza to the system administrator. <br>
+        (Add an extra dollar for anchovy or mushroom topping.) <br>
+        # Additional message text goes here. <br>
+        # Note: 'wall' prints comment lines. <br>
+        zzz23EndOfMessagezzz23 <br>`
+      }, 200);
+
+      setTimeout(() => {
+        console.log("hello")
+        p2.innerHTML = `<p>
+        <br>
+        # Could have been done more efficiently by <br>
+        # wall message-file <br>
+        # However, embedding the message template in a script <br>
+        #+ is a quick-and-dirty one-off solution. <br>
+        <br>
+        exit <br><br><br>
+      </p>`
+      }, 700);
+
+      setTimeout(() => {
+        console.log("hello")
+        p3.innerHTML = `<p>#!/bin/bash <br>
+        <br>
+        # Noninteractive use of 'vi' to edit a file. <br>
+        # Emulates 'sed'. <br>
+        <br>
+        E_BADARGS=85 <br>
+        <br>
+        if [ -z "$1" ] <br>
+        then <br>
+        echo "Usage: 'basename $0' filename" <br>
+        exit $E_BADARGS <br>
+        fi <br>
+      </p>`
+      }, 1000);
+
+      setTimeout(() => {
+        console.log("hello")
+        p4.innerHTML = `<p>
+        TARGETFILE=$1 <br>
+        <br>
+        # Insert 2 lines in file, then save. <br>
+        #--------Begin here document-----------# <br>
+        vi $TARGETFILE <<x23LimitStringx23 <br>
+          x23LimitStringx23 <br>
+          #----------End here document-----------# <br>
+          <br>
+          # Note that ^[ above is a literal escape <br>
+          #+ typed by Control-V <Esc>. <br>
+            <br>
+            # Bram Moolenaar points out that this may not work with 'vim' <br>
+            #+ because of possible problems with terminal interaction. <br>
+            <br>
+            exit <br>
+      </p>`
+        let width = window.innerWidth;
+        width = width / 10
+        console.log(width)
+        let c = 0
+        var tid1 = setInterval(() => {
+          p5.innerHTML = p5.innerHTML + `=`;
+          c++;
+          if (c > width) {
+            clearInterval(tid1)
+          }
+        }, .7)
+
+      }, 1500);
+
+
+      setTimeout(() => {
+        let pre = document.getElementById("pre");
+        pre.innerHTML = `<h1 class="hello">Hello...</h1>`;
+      }, 2500)
+
+      setTimeout(() => {
+        let pre = document.getElementById("pre");
+        let op = 1;
+
+        var tid2 = setInterval(() => {
+          pre.style.opacity = op;
+          op = op - .1;
+          if (op < 0) {
+            clearInterval(tid2)
+          }
+        }, 20)
+
+        let footer = document.getElementById("footer");
+        footer.classList.add("display")
+        console.log("preloader complete!");
+      }, 3000)
+
+
+    })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let hm = 0;
+    const hamMenu = document.getElementById("hMenu");
+    const ham = document.getElementById("ham");
+    function toggleHamMenu() {
+      if (hm == 0) {
+        hamMenu.classList.add("showHameMenu");
+        hamMenu.classList.remove("hideHameMenu");
+        ham.innerHTML = `<img src="img/hammcut.png" alt="" class="ham" onclick="toggleHamMenu()">`;
+        hm = 1;
+      }
+      else if (hm == 1) {
+        hamMenu.classList.add("hideHameMenu");
+        hamMenu.classList.remove("showHameMenu");
+        ham.innerHTML = `<img src="img/hamm.png" alt="" class="ham" onclick="toggleHamMenu()">`;
+        hm = 0;
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
